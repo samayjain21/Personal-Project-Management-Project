@@ -43,7 +43,8 @@ public class ProjectTaskService {
 			projectTask.setProjectSequence(projectIdentifier + "-" + backlogSequence);
 			projectTask.setProjectIdentifer(projectIdentifier);
 			// setting default priority and status
-
+			//if priority is left not filled then it is set to low
+			//priority 1- low; 2- medium; 3- high
 			if (projectTask.getPriority() == 0 ||projectTask.getPriority() == null) {
 				projectTask.setPriority(3);
 
