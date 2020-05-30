@@ -44,7 +44,7 @@ public class ProjectTaskService {
 			projectTask.setProjectIdentifer(projectIdentifier);
 			// setting default priority and status
 
-			if (projectTask.getPriority() == null) {
+			if (projectTask.getPriority() == 0 ||projectTask.getPriority() == null) {
 				projectTask.setPriority(3);
 
 			}
